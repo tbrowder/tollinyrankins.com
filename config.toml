@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://zola-blogs.us"
+base_url = "https://tollinyrankins.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -21,8 +21,8 @@ build_search_index = true
 # Note that code blocks need to be enclosed in three backtics in front
 # and behind.
 
-theme = "docsascode"
+theme = "hallo"
 
 [extra]
 # Put all your custom variables here
-live_base_url = "https://zola-blogs.us/"
+live_base_url = "https://tollinyrankins.com/"
