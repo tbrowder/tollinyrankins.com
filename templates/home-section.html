@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ section.title }} {% endblock title %}
+
+{% block nav %}
+    <ul id="breadcrumbs">
+        {% for parent in section.ancestors %}
+            {% set s = get_section(path=parent, include_pages=false) %}
+                <li><a href="{{s.permalink}}">{{s.title}}</a>&nbsp;&#8594;&nbsp; </li>
+        {% endfor %}
+        <li>{{ section.title }}</li>
+
+        {# adding content specific to the home page left side #}
+        <div style="margin-bottom:1rem;">
+This is a free blogging site for programmers
+and developers. See the <b>ABOUT</b> section
+for details and instructions
+for registering as an author.
+        </div>
+
+    </ul>
+    <h1>{{ section.title }}</h1>
+    {{ macro::tree() }} 
+{% endblock nav %}
