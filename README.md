@@ -1,3 +1,5 @@
+![.github/workflows/build.yml](https://github.com/tbrowder/tollinyrankins.com/workflows/.github/workflows/build.yml/badge.svg)
+
 # tollinyrankins.com
 
 ## A template repo for forking
